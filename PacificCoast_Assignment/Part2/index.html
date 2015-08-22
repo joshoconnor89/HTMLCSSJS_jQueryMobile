@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jQuery Mobile</title>
+<!-- ios/webkit setup -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png" />
+
+<!-- jQuery required files -->
+<link rel="stylesheet" href="css/themes/subtle.min.css" />
+ <link rel="stylesheet" href="css/themes/ThePacificCoast.css" />
+ <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /><!--Standard jquery mobile-->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+
+<!-- /PAGE 1, HOME PAGE-->
+<div id="main" data-role="page">
+<div data-role="header" data-position="fixed"><h1>The Pacific Coast</h1>
+
+</div><!-- /header -->
+
+
+<div class="ui-content"><p>West Coast or Pacific Coast are terms for the westernmost coastal states of the United States, usually California, Oregon, and Washington. More specifically, the term refers to an area defined on the east by the Cascade Range, Sierra Nevada and Mojave Desert and on the west by the Pacific Ocean. The U.S. Census groups the five states of California, Oregon, Washington, Alaska, and Hawaii together as the Pacific States division.</p> <!--you can add another class if needed for CSS (just add new class name within the quotes)-->
+<br>
+<ul data-role="listview" data-inset="true">
+<li data-role="list-divider">Coastal States</li>	
+<li><a href="#one">California</a></li>
+<li><a href="#two">Oregon</a></li>
+<li><a href="#three">Washington</a></li>
+</ul>
+
+
+
+
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed"><h4>Josh O'Connor</h4></div><!-- /footer -->
+</div><!-- /page main -->
+
+
+
+
+
+<!-- /PAGE 2, CALIFORNIA-->
+<div id="one" data-role="page">
+<div data-role="header" data-position="fixed"><h1>California</h1>
+<a class="ui-btn ui-corner-all ui-icon-arrow-l" data-rel="back">Back</a>
+
+</div><!-- /header -->
+
+<div class="ui-content"><p>California is a state located on the West Coast of the United States. It is the most populous U.S. state, home to 1 out of 8 Americans (38 million people), and is the third largest state by area (after Alaska and Texas). California is bordered by Oregon to the north, Nevada to the east, Arizona to the southeast, and the Mexican State of Baja California to the south. It is home to the nation's second and fifth most populous census statistical areas (Greater Los Angeles area and San Francisco Bay Area, respectively), and eight of the nation's 50 most populated cities (Los Angeles, San Diego, San Jose, San Francisco, Fresno, Sacramento, Long Beach, and Oakland).The capital city is Sacramento.</p> <!--you can add another class if needed for CSS (just add new class name within the quotes)-->
+
+<br><a href="#popupBasic0" data-rel="popup" class="ui-btn">State Flag</a>
+
+<!--Pop up-->
+<div id="popupBasic0" data-role="popup" data-rel="back" class="ui-icon-delete">
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+<p><img style="width: 80%; display: block; margin-left:auto; margin-right:auto;" src="images/ca_flag.png"></p>
+
+</div>
+
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed"><h4>Josh O'Connor</h4></div><!-- /footer -->
+</div><!-- /page main -->
+
+
+
+
+
+
+
+<!-- /PAGE 3, OREGON-->
+<div id="two" data-role="page">
+<div data-role="header" data-position="fixed"><h1>Oregon</h1>
+<a class="ui-btn ui-corner-all ui-icon-arrow-l" data-rel="back">Back</a>
+
+</div><!-- /header -->
+
+<div class="ui-content"><p>Oregon is a state in the Pacific Northwest region of the United States. It is located on the Pacific coast, with Washington to the north, California to the south, Nevada on the southeast and Idaho to the east. The Columbia and Snake rivers delineate much of Oregon's northern and eastern boundaries, respectively. The area was inhabited by many indigenous tribes before the arrival of traders, explorers, and settlers who formed an autonomous government in Oregon Country in 1843. The Oregon Territory was created in 1848, and Oregon became the 33rd state on February 14, 1859.
+</p> 
+
+<br><a href="#popupBasic1" data-rel="popup" class="ui-btn">State Flag</a>
+
+<!--Pop up-->
+
+<div id="popupBasic1" data-role="popup" data-rel="back" class="ui-icon-delete">
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+<p><img style="width: 80%; display: block; margin-left:auto; margin-right:auto;" src="images/or_flag.png"></p>
+</div>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed"><h4>Josh O'Connor</h4></div><!-- /footer -->
+</div><!-- /page main -->
+
+
+
+
+
+
+
+
+<!-- /PAGE 4, WASHINGTON-->
+<div id="three" data-role="page">
+<div data-role="header" data-position="fixed"><h1>Washington</h1>
+<a class="ui-btn ui-corner-all ui-icon-arrow-l" data-rel="back">Back</a>
+
+</div><!-- /header -->
+
+<div class="ui-content"><p>Washington is a state in the Pacific Northwest region of the United States located north of Oregon, west of Idaho, and south of the Canadian province of British Columbia on the coast of the Pacific Ocean. Named after George Washington, the first President of the United States, the state was carved out of the western part of the Washington Territory which had been ceded by Britain in 1846 by the Oregon Treaty as a settlement of the Oregon Boundary Dispute. It was admitted to the Union as the 42nd state in 1889.</p>
+
+
+<br><a href="#popupBasic2" data-rel="popup" class="ui-btn">State Flag</a>
+
+<!--Pop up-->
+<div id="popupBasic2" data-role="popup" data-rel="back" class="ui-icon-delete">
+<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-left">Close</a>
+<p><img style="width: 80%; display: block; margin-left:auto; margin-right:auto;" src="images/wa_flag.png"></p>
+</div>
+
+
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed"><h4>Josh O'Connor</h4></div><!-- /footer -->
+</div><!-- /page main -->
+
+
+</body>
+</html>

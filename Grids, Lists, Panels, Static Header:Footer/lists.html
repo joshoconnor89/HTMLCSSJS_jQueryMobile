@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jQuery Mobile - Lists</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png" />
+
+<link rel="stylesheet" href="css/themes/subtle.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$( "[data-role='header'], [data-role='footer']" ).toolbar({ theme: "b" });
+});
+</script>
+
+</head>
+<body>
+<div data-role="header" data-position="fixed"><h1>List Views</h1></div>
+
+<div id="main" data-role="page">
+
+<div class="ui-content" >
+<ul data-role="listview" data-filter="true">
+<li><a href="#numbers">Numbers</a></li>
+<li><a href="#thumbs">Thumbnails</a></li>
+<li data-role="list-divider">Other</li>
+<li><a href="#icons">Icons</a></li>
+<li><a href="#split">Split Button List</a></li>
+</ul>
+</div>
+
+</div><!-- /main page-->
+
+<!-- Lists with numbers -->
+<div id="numbers" data-role="page">
+
+<div class="ui-content">
+<ul data-role="listview" data-inset="true" data-filter="true">
+<li><a href="#numbers">Numbers</a><span class="ui-li-count">4</span></li>
+<li><a href="#thumbs">Thumbnails</a></li>
+<li data-role="list-divider">Other</li>
+<li><a href="#icons">Icons</a>
+<li><a href="#split">Split Button</a></li>
+</ul>
+</div>
+
+</div><!-- / numbers page -->
+
+<!-- Lists with Thumbnail images -->
+<div id="thumbs" data-role="page">
+
+<div class="ui-content">
+<ul data-role="listview" data-inset="true" data-filter="true">
+
+
+<li><a href="alaska.html">
+<!-- To make the flag image an icon <img src="images/flag_alaska.png" class="ui-li-icon">  -->
+<img src="images/flag_alaska.png">
+<h3>Alaska</h3>
+<p>Capital: Juneau</p>
+</a></li>
+
+
+<!-- Uncomment to make the flag image an icon
+<li><a href="alaska.html">
+<img src="images/flag_alaska.png" class="ui-li-icon">
+<h3>Alaska</h3>
+</a></li>
+-->
+
+<li><a href="california.html">
+<img src="images/flag_california.png">
+<h3>California</h3>
+<p>Capital: Sacramento</p>
+</a></li>
+<li><a href="colorado.html">
+<img src="images/flag_colorado.png">
+<h3>Colorado</h3>
+<p>Capital: Denver</p>
+</a></li>
+<li><a href="nevada.html">
+<img src="images/flag_nevada.png">
+<h3>Nevada</h3>
+<p>Capital: Carson City</p>
+</a></li>
+</ul>
+</div>
+
+</div><!-- /page -->
+
+<!-- lists with icons -->
+<div id="icons" data-role="page">
+
+<div class="ui-content">
+<ul data-role="listview" data-inset="false" data-filter="false">
+<li><a href="alaska.html">
+<img src="images/flag_alaska.png">
+<h3>Alaska</h3>
+</a></li>
+<li><a href="california.html">
+<img src="images/flag_california.png">
+<h3>California</h3>
+</a></li>
+<li><a href="colorado.html">
+<img src="images/flag_colorado.png">
+<h3>Colorado</h3>
+</a></li>
+<li><a href="nevada.html">
+<img src="images/flag_nevada.png">
+<h3>Nevada</h3>
+</a></li>
+</ul>
+</div>
+
+</div><!-- /page -->
+
+
+<!-- lists with split buttons -->
+<div id="split" data-role="page">
+
+<div class="ui-content">
+<ul data-role="listview" data-split-icon="info">
+
+
+<li>
+<a href="#alaska-photos" data-rel="popup" 
+data-position-to="window" data-transition="pop">
+<h3>Alaska</h3>
+<p><strong>North to the Future</strong></p>
+</a>
+
+<a href="#alaska-info" data-rel="popup" data-position-to="window" data-transition="pop">
+</a>
+</li>
+
+<!-- uncomment to have subtitle to the right instead of below
+<li>
+<a href="#ca-photos" data-rel="popup" 
+data-position-to="window" data-transition="pop">
+<h3>California</h3>
+<p class="ui-li-aside"><strong>Eureka</strong></p>
+</a>
+-->
+
+<li>
+<a href="#ca-photos" data-rel="popup" 
+data-position-to="window" data-transition="pop">
+<h3>California</h3>
+<p><strong>Eureka</strong></p>
+</a>
+
+<a href="#ca-info" data-rel="popup" 
+data-position-to="window" data-transition="pop">
+</a>
+</li>
+
+<li>
+<a href="#co-photos" data-rel="popup" 
+data-position-to="window" data-transition="pop">
+<h3>Colorado</h3>
+<p><strong>Rocky Mountains and Weeds</strong></p>
+</a>
+
+<a href="#co-info" data-rel="popup" 
+data-position-to="window" data-transition="pop">
+</a>
+</li>
+
+
+
+<!-- Uncomment to have icon to left of title
+<li><a href="nevada.html">
+<img src="images/flag_nevada.png" class="ui-li-icon">
+<h3>Nevada</h3>
+</a></li>
+</ul>
+</div>
+-->
+
+<!-- alaska photos popup -->
+<div id="alaska-photos" data-role="popup">
+<div class="ui-content">
+<img src="images/alaska01.jpg" />
+<img src="images/alaska02.jpg" />
+<img src="images/alaska03.jpg" />
+</div>
+</div>
+
+<div id="ca-photos" data-role="popup">
+<div class="ui-content">
+<img src="images/ca_flag.png" style="width:100%;"/>
+</div>
+</div>
+
+<div id="co-photos" data-role="popup">
+<div class="ui-content">
+<img src="images/flag_colorado.png" style="width:100%;"/>
+</div>
+</div>
+
+
+<!-- alaska info popup must be nested inside linking page -->
+<div id="alaska-info" data-role="popup"> 
+
+<p>Alaska is the largest state.</p>
+
+</div><!-- /popup -->
+
+
+<!-- colorado info popup -->
+<div id="co-info" data-role="popup"> 
+
+<p>Colorado is the Rocky State.</p>
+
+</div><!-- /popup -->
+
+
+<!-- Ca info popup -->
+<div id="ca-info" data-role="popup"> 
+<div class="ui-content">
+<p>California is the golden state.</p>
+</div><!-- /content -->
+</div><!-- /popup -->
+
+</div><!-- /page -->
+
+
+<div data-role="footer" data-position="fixed"><h1>Ta Da</h1></div>
+
+
+</body>
+</html>

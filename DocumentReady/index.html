@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Document Ready</title>
+<!-- ios/webkit setup -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png" />
+
+<!-- jQuery required files -->
+<link rel="stylesheet" href="css/themes/subtle.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $("#box1").click(function(){
+		$("#box1").hide();
+		$("#label").text("Box #1 Gone!");
+    });
+	$("#box2").click(function(){
+		$("#box2").hide();
+		$("#label").text("Box #2 Gone");
+    });
+	$("#box3").click(function(){
+		$("#box3").hide();
+		$("#label").text("Box #3 Gone");
+    });
+	$("#box4").click(function(){
+		$("#box4").hide();
+		$("#label").text("Box #4 Gone");
+    });
+	$("#box5").click(function(){
+		$("#box5").hide();
+		$("#label").text("Box #5 Gone");
+    });
+	$("#box6").click(function(){
+		$("#box6").hide();
+		$("#label").text("Box #6 Gone");
+    });
+	$("#box7").click(function(){
+		$("#box7").hide();
+		$("#label").text("Box #7 Gone");
+    });
+	$("#box8").click(function(){
+		$("#box8").hide();
+		$("#label").text("Box #8 Gone");
+    });
+	$("#box9").click(function(){
+		$("#box9").hide();
+		$("#label").text("Box #9 Gone");
+    });
+});
+</script>
+
+<style type="text/css">
+.ui-bar {background-color:#fff; padding:2px;border:none;}
+.ui-bar img {display:block; margin:auto; width:100%;}
+</style>
+</head>
+
+<body>
+
+<div id="grid" data-role="page">
+
+<div class="ui-content">
+
+<div class="ui-grid-d">
+
+<div class="ui-block-a">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box1"  />
+</div>
+</div>
+
+<div class="ui-block-b">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box2"/>
+</div>
+</div>
+
+<div class="ui-block-c">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box3"/>
+</div>
+</div>
+
+<div class="ui-block-a">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box4"/>
+</div>
+</div>
+
+<div class="ui-block-b">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box5"/>
+</div>
+</div>
+
+<div class="ui-block-c">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box6" />
+</div>
+</div>
+
+<div class="ui-block-a">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box7"/>
+</div>
+</div>
+
+<div class="ui-block-b">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box8"/>
+</div>
+</div>
+
+<div class="ui-block-c">
+<div class="ui-bar ui-bar-a">
+<img src="images/GraySquare.jpg" alt="" id="box9" />
+</div>
+</div>
+
+</div><!-- /content -->
+<p id="label" style="text-align:center;">Click the box to make it Disappear</p>
+</div>
+
+</div>
+</body>
+</html>

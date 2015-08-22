@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jQuery Mobile</title>
+<!-- ios/webkit setup -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png" />
+
+<!-- jQuery required files -->
+<link rel="stylesheet" href="css/themes/subtle.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+<script type="text/javascript">
+$(function(){
+	$("[data-role='header'],[data-role='footer']").toolbar({theme:"b"});
+});
+</script>
+
+</head>
+<body>
+<div data-role="header" data-position="fixed"><h1>Header</h1>
+</div><!-- /header -->
+
+<div id="main" data-role="page">
+
+<div class="ui-content">
+<h1>Main Content</h1>
+<a href="#main" class="ui-btn">Main</a>
+<a href="#one" class="ui-btn">One</a>
+<a href="#two" class="ui-btn">Two</a>
+</div><!-- /content -->
+
+</div><!-- /page main -->
+
+<div id="one" data-role="page">
+
+<div class="ui-content">
+<h1>Content 1</h1>
+<a href="#main" class="ui-btn">Main</a>
+<a href="#one" class="ui-btn">One</a>
+<a href="#two" class="ui-btn">Two</a>
+</div><!-- /content -->
+</div><!-- /page main -->
+
+<div id="two" data-role="page">
+<!-- /header -->
+<div class="ui-content">
+<h1>Content 1</h1>
+<a href="#main" class="ui-btn">Main</a>
+<a href="#one" class="ui-btn">One</a>
+<a href="#two" class="ui-btn">Two</a>
+</div><!-- /content -->
+
+</div><!-- /page main -->
+
+
+<div data-role="footer" data-position="fixed"><h1>Footer</h1>
+
+
+
+</body>
+</html>

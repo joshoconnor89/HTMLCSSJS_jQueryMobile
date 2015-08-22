@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>jQuery Mobile</title>
+<!-- ios/webkit setup -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png" />
+
+<!-- jQuery required files -->
+<link rel="stylesheet" href="css/themes/subtle.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /><!--Standard jquery mobile-->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<div id="main" data-role="page">
+<div data-role="header" data-position="fixed"><h1>Header</h1>
+
+</div><!-- /header -->
+<div data-role="navbar">
+<ul>
+<li><a href="#main" class="ui-btn-active">Main</a></li>
+<li><a href="#one">One</a></li>
+<li><a href="#two">Two</a></li>
+<li><a href="#three">Three</a></li>
+<li><a href="#four">Four</a></li>
+</ul>
+</div><!-- /navbar -->
+
+<div class="ui-content">Main Content <!--you can add another class if needed for CSS (just add new class name within the quotes)-->
+
+<a href="#one" class="ui-btn ui-corner-all ui-shadow" data-transition="flip">One</a>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed"><h4>Footer</h4></div><!-- /footer -->
+</div><!-- /page main -->
+
+
+<!--this would be the page one--->
+<div id="one" data-role="page">
+<div data-role="header" data-position="fixed"><h1>Header</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="#main">Main</a></li>
+<li><a href="#one" class="ui-btn-active">One</a></li>
+<li><a href="#two">Two</a></li>
+<li><a href="#three">Three</a></li>
+<li><a href="#four">Four</a></li>
+</ul>
+</div><!-- /navbar -->
+</div><!-- /header -->
+<div>Content One <br>
+<a href="#main" class="ui-btn ui-corner-all ui-shadow" data-transition="flip">Main</a>
+</div><!-- /content -->
+
+<div data-role="footer" data-position="fixed"><h4>Footer</h4></div><!-- /footer -->
+</div><!-- /page main -->
+
+
+
+
+
+</body>
+</html>

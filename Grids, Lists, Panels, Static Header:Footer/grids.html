@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Panels</title>
+<!-- ios/webkit setup -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png" />
+
+<!-- jQuery required files -->
+<link rel="stylesheet" href="css/themes/subtle.min.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<!--Add event, when image is clicked, change p background color to yellow.  You can do this with any css property-->
+<!--Uncomment to add document ready function
+<script>
+$(document).ready(function(){
+    $("img").click(function(){
+        $("p").css("background-color", "purple");
+		$("p").css("font-size", "24px");
+		$("p").css("color", "yellow");
+		//can target .text instead of .css properties
+		//$("p").text("Whats good");
+		//Hides all content
+		//$("#grid").css("display", "none");
+		//can also target attributes
+		//$("#alaskaimage").attr("src", "images/blahblah");
+		
+	
+    });
+});
+</script>
+-->
+
+<style type="text/css">
+.ui-bar {background-color:#fff; padding:2px;border:none;}
+.ui-bar img {display:block; margin:auto; width:100%;}
+</style>
+</head>
+<body>
+
+
+<div id="grid" data-role="page">
+
+
+<div data-role="header" data-position="fixed"><h1>Grids</h1></div>
+<!-- /header -->
+
+<div class="ui-content">
+<!-- change grid-a to grid-b to change image size-->
+<div class="ui-grid-b">
+
+<div class="ui-block-a">
+<div class="ui-bar ui-bar-a">
+<img src="images/alaska01.jpg" id="alaska1" alt="Musk Ox in the Fields" />
+</div>
+</div>
+
+<div class="ui-block-b">
+<div class="ui-bar ui-bar-a">
+<img src="images/alaska02.jpg" alt="Town of Talkeetna"/>
+</div>
+</div>
+
+<div class="ui-block-c">
+<div class="ui-bar ui-bar-a">
+<img src="images/alaska03.jpg"/>
+</div>
+</div>
+
+
+
+<div class="ui-block-a">
+<div class="ui-bar ui-bar-a">
+<img src="images/alaska01.jpg" />
+</div>
+</div>
+
+<div class="ui-block-b">
+<div class="ui-bar ui-bar-a">
+<img src="images/alaska02.jpg"/>
+</div>
+</div>
+
+<div class="ui-block-c">
+<div class="ui-bar ui-bar-a">
+<img src="images/alaska03.jpg"/>
+</div>
+</div>
+
+
+</div><!-- /content -->
+<p id="display" style="text-align:center;">This is the display</p>
+
+<div>
+<img id="imgdisplay" src="" style="width:100%; max-width:200px; display:block; margin:auto;" />
+</div>
+
+
+<div data-role="footer" data-position="fixed"><h4>Footer</h4></div>
+<!-- /footer -->
+</div><!-- /page grid -->
+<script>
+$(document).on("pagecreate","#grid",function(){
+	$("img").on("tap",function() {
+		//$(this).hide();
+		$("#imgdisplay").hide();
+		$("#imgdisplay").attr("src",$(this).attr("src"));
+		$("#display").text($(this).attr("alt"));
+		$("#imgdisplay").fadeIn(2000);
+	});
+	/*$("#alaska1").on("tap",function() {
+		$("#display").text("Welcome to Alaska");
+	});*/
+});
+</script>
+</body>
+</html>
